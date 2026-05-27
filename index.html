@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edison Chen — Portfolio</title>
+  <meta name="description" content="Edison Chen — Electrical Engineering Student & Robotics Leader. Portfolio of projects, experience, and contact." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a href="#welcome" class="brand">edison chen</a>
+    <ul class="nav-links">
+      <li><a href="#welcome">Welcome</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#bio">Bio</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#resume">Resume</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <header class="hero" id="welcome">
+    <div class="hero-bg"></div>
+    <div class="hero-inner">
+      <div class="avatar" aria-hidden="true">
+        <span>EC</span>
+      </div>
+      <h1 class="hero-name">edison chen</h1>
+      <p class="hero-title">Electrical Engineering Student &amp; Robotics Leader</p>
+      <p class="hero-location">Syosset, NY</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section welcome" aria-labelledby="welcome-heading">
+      <div class="container">
+        <p class="eyebrow">Welcome!</p>
+        <h2 id="welcome-heading" class="section-title">Hi, I'm Edison.</h2>
+        <p class="lede">
+          Electrical engineering student with expertise in robotics, AI, and embedded systems.
+          Passionate about designing innovative solutions through hardware and software integration.
+        </p>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <p class="eyebrow">Projects</p>
+        <h2 id="projects-heading" class="section-title">Selected Work &amp; Experience</h2>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-head">
+              <h3>NASA L'SPACE MCA — Electrical Engineer / Programmatic Specialist</h3>
+              <span class="date">Jan 2026 – Present</span>
+            </div>
+            <p>
+              Working in a multidisciplinary team to design a space mission concept and mission operations
+              for a simulated NASA mission under the mentorship of NASA scientists and engineers.
+              Developing programmatic skills around cost and schedule considerations for the electrical subsystem.
+            </p>
+            <ul class="tags">
+              <li>Mission Design</li>
+              <li>Systems Engineering</li>
+              <li>Programmatics</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h3>Mousey the Junkbot</h3>
+              <span class="date">Sept 2024 – June 2025</span>
+            </div>
+            <p>
+              Built a light-seeking robot from salvaged computer parts, sensors, and LEDs that mimics
+              mouselike behavior — a hands-on study in sensor-driven autonomy and electronics reuse.
+            </p>
+            <ul class="tags">
+              <li>Sensors</li>
+              <li>Robotics</li>
+              <li>Embedded</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h3>Inspirit AI Scholars — Exoplanet Detection</h3>
+              <span class="date">June 2023 – Aug 2023</span>
+            </div>
+            <p>
+              Developed machine learning models to predict exoplanet presence from flux and luminosity data.
+              Reformatted raw astronomical data into processable metrics to distinguish exoplanets from non-exoplanets.
+            </p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>scikit-learn</li>
+              <li>Data Science</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h3>Robotics — Programming / Electrical Head</h3>
+              <span class="date">Sept 2022 – May 2025</span>
+            </div>
+            <p>
+              Led programming and electrical for a high school FRC team. Programmed autonomous navigation
+              with PathPlanner, wired swerve modules, and integrated LED status indicators for competition robots.
+            </p>
+            <ul class="tags">
+              <li>Java</li>
+              <li>PathPlanner</li>
+              <li>Swerve</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <div class="card-head">
+              <h3>Arduino Prototyping — CTY Online Course</h3>
+              <span class="date">June 2021 – July 2021</span>
+            </div>
+            <p>
+              Participated in workshops on electronics fundamentals, programming, and prototyping —
+              building functional devices from the ground up.
+            </p>
+            <ul class="tags">
+              <li>Arduino</li>
+              <li>C++</li>
+              <li>Prototyping</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section bio" id="bio" aria-labelledby="bio-heading">
+      <div class="container">
+        <p class="eyebrow">Bio</p>
+        <h2 id="bio-heading" class="section-title">About Me</h2>
+
+        <div class="bio-grid">
+          <div class="bio-block">
+            <h3>Education</h3>
+            <div class="entry">
+              <div class="entry-head">
+                <strong>Northeastern University, College of Engineering</strong>
+                <span class="date">Expected May 2029</span>
+              </div>
+              <p>B.S. Electrical Engineering · Minor in Computer Science · Boston, MA</p>
+              <p class="muted">Cumulative GPA: 4.0</p>
+              <p class="muted">
+                Coursework: Discrete Structures, Program Design and Implementation 1/2,
+                Physics for Engineering 1/2, General Chemistry for Engineering, Calculus 1/2.
+              </p>
+            </div>
+            <div class="entry">
+              <div class="entry-head">
+                <strong>Syosset High School</strong>
+                <span class="date">Sept 2021 – June 2025</span>
+              </div>
+              <p class="muted">GPA: 4.0</p>
+            </div>
+          </div>
+
+          <div class="bio-block">
+            <h3>Leadership</h3>
+            <div class="entry">
+              <div class="entry-head">
+                <strong>Vice President — Robotics &amp; Engineering Club</strong>
+                <span class="date">Sept 2025 – Present</span>
+              </div>
+              <p>
+                Building a community-driven STEM club through professional engagement,
+                personalized projects, and outreach events.
+              </p>
+            </div>
+            <div class="entry">
+              <div class="entry-head">
+                <strong>Student Liaison — Coding &amp; Web Design</strong>
+                <span class="date">Sept 2023 – May 2025</span>
+              </div>
+              <p>
+                Taught weekly coding lessons (HTML, CSS, JavaScript, Python, Java) to 30+ students;
+                secured club resources and led presentations.
+              </p>
+            </div>
+          </div>
+
+          <div class="bio-block">
+            <h3>Skills</h3>
+            <p><strong>Languages:</strong> Python, Java, HTML, CSS, C++</p>
+            <p><strong>Frameworks &amp; Tools:</strong> Git, pandas, NumPy, scikit-learn, Gradle</p>
+            <p><strong>Hardware &amp; Software:</strong> AutoCAD, Vectorworks, Jupyter, Excel, MATLAB, NX Siemens</p>
+          </div>
+
+          <div class="bio-block">
+            <h3>Awards</h3>
+            <ul class="awards">
+              <li>Roslyn Code Overload Hackathon 2024 — 2nd Place, Creativity Award (40+ teams)</li>
+              <li>PicoCTF CMU Cybersecurity Competition 2024 — Top 10% Nationwide</li>
+              <li>St. Joseph's University Hackathon — 10th Place</li>
+              <li>FRC — 1st place FIRST Long Island Regional, Autonomous Award, 13th Hudson Valley, 29th Curie Division Worlds</li>
+              <li>FTC — Motivate Award, Connect Award, Inspire Award 3rd, Design Award 2nd, 13th Long Island Championship</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <p class="eyebrow">Contact</p>
+        <h2 id="contact-heading" class="section-title">Let's Connect</h2>
+        <p class="lede">Reach out about projects, collaboration, or just to say hi.</p>
+        <ul class="contact-list">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:ediedi520@gmail.com">ediedi520@gmail.com</a>
+          </li>
+          <li>
+            <span class="contact-label">Phone</span>
+            <a href="tel:+15168007491">(516) 800-7491</a>
+          </li>
+          <li>
+            <span class="contact-label">Location</span>
+            <span>Syosset, NY</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section resume" id="resume" aria-labelledby="resume-heading">
+      <div class="container">
+        <p class="eyebrow">Resume</p>
+        <h2 id="resume-heading" class="section-title">Full Resume</h2>
+        <p class="lede">
+          A printable summary of my education, projects, leadership, and awards.
+        </p>
+        <a href="resume.pdf" class="btn btn-primary" download>Download Resume (PDF)</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Edison Chen</p>
+      <p class="footer-tag">Built with HTML, CSS &amp; care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
