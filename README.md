@@ -20,4 +20,4 @@ Then visit http://localhost:8000.
 The repo is named `MasterEdiCool.github.io`, so pushing to the default branch publishes the site at https://masteredicool.github.io.
 
 ## Resume
-Drop a `resume.pdf` in the project root to enable the "Download Resume" button on the Resume section.
+Drop a `resume.pdf` into the `pdfs/` folder to enable the "Download Resume" button on the Resume section.
