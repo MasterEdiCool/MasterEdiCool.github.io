@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Notebook — Cornerstone 2 Final Project</title>
+  <meta name="description" content="Engineering design notebook entries for the GE 1502 Cornerstone 2 final project — a hands-on STEM electronics learning toy for 5th graders." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a href="../pages/index.html" class="brand">Edison Chen</a>
+    <ul class="nav-links">
+      <li><a href="../pages/index.html">Welcome</a></li>
+      <li><a href="../pages/projects.html" class="active">Projects</a></li>
+      <li><a href="../pages/bio.html">Bio</a></li>
+      <li><a href="../pages/contact.html">Contact</a></li>
+      <li><a href="../pages/resume.html">Resume</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <main>
+    <section class="section page-section">
+      <div class="container">
+        <a href="../projects/1502FinalProject.html" class="back-link">← Back to project</a>
+
+        <header class="project-head">
+          <p class="eyebrow">Notebook</p>
+          <h1 class="section-title">GE 1502 Final Project — Design Notebook</h1>
+          <p class="lede">
+            Engineering design notebook for our Cornerstone 2 final project: a hands-on
+            STEM electronics learning toy for 5th graders at Melrose Leadership Academy
+            in Oakland. Latest entries at the top.
+          </p>
+          <p class="muted">Team: Edison Chen, Samuel Zhao, Minyoung Sung</p>
+        </header>
+
+        <ol class="notebook">
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-04-10">April 10, 2026</time>
+              <span class="entry-tag">Documentation</span>
+            </div>
+            <h3>M7 documentation and showcase debrief</h3>
+            <p class="entry-summary">
+              Final M7 writeup. Circuit Blocks is a puzzle game where students complete
+              a circuit by placing and reorienting component and wire boxes, with tactile
+              feedback — LEDs, buzzers, motors — when the circuit closes. The functional
+              elements section covered the component lineup (potentiometer, buzzer, motor,
+              LED, button, battery) and how they connect through corner, straight, and
+              three-way wire boxes to teach simple circuits, polarity, and parallel
+              connections. Captured what we heard from the 5th graders too: they responded
+              strongly to the tactile feedback, and the main thing they flagged was that
+              the boxes should be looser and easier to slot in and pull out. Photo log
+              of the final prototype is done.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">M7 final documentation set</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-04-08">April 8, 2026</time>
+              <span class="entry-tag">Final</span>
+            </div>
+            <h3>Wiring diagrams, bilingual instructions, feedback planning</h3>
+            <p class="entry-summary">
+              Two-hour wrap-up session in the makerspace. We drew the wire paths on the
+              outside of each box so kids can visually trace how the circuit closes, then
+              made bilingual instruction cards in Canva — English and a direct Spanish
+              translation — and printed them. Filled in the feedback planning matrix with
+              five project goals (interest in STEM, engagement, safety, durability,
+              bilingual usability), each with a metric, a data-collection method, and the
+              reasoning behind it. From the showcase: kids loved the concept and were
+              excited to step through as many levels as they could; the Spanish instructions
+              were genuinely useful for the Spanish-dominant students; nothing electrical
+              broke under rough handling. Honest miss: we underestimated how hard the kids
+              would yank on the handles and a few snapped. The component and wire boxes
+              themselves came through intact.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">Final prototype + bilingual instruction cards</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-04-03">April 3, 2026</time>
+              <span class="entry-tag">Iteration</span>
+            </div>
+            <h3>Handle redesign without reprinting every box</h3>
+            <p class="entry-summary">
+              Spent a long time iterating on a handle design that wouldn't require
+              reprinting all the boxes. Ideas we ruled out: full reprint (too much
+              wasted filament), drilling holes for a string handle, screwing in nails
+              (visually broken on the component boxes where the component already pokes
+              out the top). The winning idea, settled on the spot: print a very thin lid
+              layer with the handle integrated into it, glue that lid onto the existing
+              box, and sand the seam so it blends in naturally. That fixes the glue
+              surface-area problem — a tiny handle glued directly to a box would shear
+              off, but a full lid spreads the load. Also went over every box with more
+              copper tape so the connection is reliable every time.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">Lid-with-handle print on top of existing boxes</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-03-31">March 31, 2026</time>
+              <span class="entry-tag">Testing</span>
+            </div>
+            <h3>Casing fit-check and copper-tape conductivity test</h3>
+            <p class="entry-summary">
+              Today's goal was to check the printed casing against our boxes and
+              verify connections end-to-end. Most boxes fit, but a few were slightly
+              off — even with identical print settings, the dimensions drifted between
+              prints — so we sanded them flush. Stuck copper tape on the casing and on
+              a few components to test conductivity, and the connections held. The real
+              problem that surfaced was usability, not electrical: without handles, the
+              boxes were awkward to pull out cleanly. That goes to the top of next
+              session's list.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">Casing with copper-tape grid</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-03-27">March 27, 2026</time>
+              <span class="entry-tag">Iteration</span>
+            </div>
+            <h3>First casing print + reworking the existing boxes</h3>
+            <p class="entry-summary">
+              Picked up the first print of the casing and tried to fit components — the
+              tolerances were off, so we re-toleranced and reprinted. Bigger issue: the
+              existing component boxes weren't designed to slide into a grid casing.
+              We walked through each design and settled on a uniform fix — remove the
+              bottom lid (still gives us access to the inside) and resize so the boxes
+              slide into the grid cells. For the component boxes where the component
+              pokes out the top, we'll just glue the component into place so it can't
+              shift while a kid is handling the box.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-03-25">March 25, 2026</time>
+              <span class="entry-tag">Ideation</span>
+            </div>
+            <h3>New conductivity approach: copper-tape grid</h3>
+            <p class="entry-summary">
+              Each of us came in with an independent idea for fixing the inconsistent
+              washer-to-washer connections. The concept we landed on: run copper tape
+              across the casing in a grid, and run more copper tape through the inside
+              of each box, so when a box drops onto its cell the tape contacts close
+              the circuit — no more relying on washers to butt up tightly against each
+              other. We dropped the washer plan entirely. I started the SolidWorks
+              model for the new casing.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-03-25">March 25, 2026</time>
+              <span class="entry-tag">PM Handoff</span>
+            </div>
+            <h3>M5 planning and scheduling</h3>
+            <p class="entry-summary">
+              Hour-long planning session — when2meet to find days the three of us are
+              free (Tuesdays and Fridays are cleanest), and a quick review of what's
+              left to take the prototype from "works sometimes" to a finished product.
+              The recurring failure mode is still the connection between boxes. Action
+              item for next session: each person brings a concrete proposal.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-03-21">March 21, 2026</time>
+              <span class="entry-tag">Debugging</span>
+            </div>
+            <h3>Diagnosing the connection problem (and a fix)</h3>
+            <p class="entry-summary">
+              Three-hour session focused on why our boxes were only conducting sometimes.
+              After testing different configurations, we identified the failure points
+              and developed a more reliable scheme — increase the conductive surface
+              area by laying down more copper tape around the washers, so even a slightly
+              imperfect fit still completes the circuit. We also finished soldering all
+              the major component boxes (button, buzzer, battery, and so on) and a big
+              chunk of the remaining wire boxes. Finalized the SolidWorks lid designs
+              but held off mass-printing them until after the aesthetics milestone.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">Soldered component boxes on the bench</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-03-18">March 18, 2026</time>
+              <span class="entry-tag">Build</span>
+            </div>
+            <h3>Frame rebuild and a new connection bug</h3>
+            <p class="entry-summary">
+              Two-hour session. Laser-cut a tighter version of the 5x5 board frame and
+              super-glued the edges (the previous version's hot glue was failing).
+              Soldered 7 of the 19 boxes that need wiring. Hit a new problem during
+              testing: even when two soldered washers were touching, the LED would only
+              light up sometimes — same configuration, different result. We didn't solve
+              it tonight; it's the top priority for the next session.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">Black-PLA boxes mid-assembly</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-03-16">March 16, 2026</time>
+              <span class="entry-tag">Build</span>
+            </div>
+            <h3>Soldering pass and SolidWorks drawings</h3>
+            <p class="entry-summary">
+              Long session focused on soldering wires inside each component box and
+              bonding them to the washers with copper tape. Frustrating work — the same
+              solder + tape technique would work on one box and not the next, so we
+              redid several from scratch. We also finished SolidWorks drawings for the
+              motor, button, LED, buzzer, and battery blocks plus the 2x1 connector, and
+              assigned distinct colors so the boxes are easy to tell apart at a glance.
+              Sam floated an alternate connection idea — fit the wire between the washer
+              and the printed hole instead of relying on the washer face — worth
+              testing next session.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">SolidWorks drawings — component blocks</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-03-13">March 13, 2026</time>
+              <span class="entry-tag">CAD</span>
+            </div>
+            <h3>Dimensions, tolerances, and printing</h3>
+            <p class="entry-summary">
+              About 1.5 hours of design plus another ~2 hours of print time. We remeasured
+              everything because the earlier prints had drifted out of spec, then used
+              those dimensions to model all the component boxes in SolidWorks and the
+              outer 3x3, 4x4, and 5x5 boards in AutoCAD before printing. First round, the
+              potentiometer hole came out too small — a makerspace worker walked us
+              through drilling it open instead of reprinting. We dialed in a working
+              tolerance so the washer fits snugly without tape or glue.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-03-10">March 10, 2026</time>
+              <span class="entry-tag">PM Handoff</span>
+            </div>
+            <h3>M4 kickoff and the washer pivot</h3>
+            <p class="entry-summary">
+              Project-manager handoff to Sam for M4 and a planning session for the next
+              stretch. Most of the discussion was how to make the box-to-box connection
+              reliable. We settled on buying small metal washers and bonding the wire to
+              them with copper tape — a more consistent contact surface than what we had.
+              We also decided to support 3x3, 4x4, and 5x5 board sizes so the puzzle can
+              scale in difficulty. Next session: fix each component box's CAD to accept
+              the washer, and laser-cut the three board sizes.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-02-26">February 26, 2026</time>
+              <span class="entry-tag">Milestone</span>
+            </div>
+            <h3>50% milestone — CAD lock-in, first 3D prints, wired prototype</h3>
+            <p class="entry-summary">
+              Two-hour session aimed at proving the prototype is at least 50% complete
+              and actually functional. Each of us finalized our own component-box CAD
+              against the real measurements taken earlier in the week — Sam's motor
+              block, Minyoung's potentiometer block, and my LED block. Exported, printed,
+              cleaned up the prints, and assembled. I drew up the flowchart for the
+              toy's logic: a button or potentiometer press only does anything if the
+              circuit closes, in which case the LED, motor, and buzzer all activate.
+              Wired the components inside the box, tested end-to-end, and it worked.
+              The prototype is fully assembled, wired, and demoable.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">Wired prototype + flowchart</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-02-24">February 24, 2026</time>
+              <span class="entry-tag">Ideation</span>
+            </div>
+            <h3>Brainstorm: locking in the approach</h3>
+            <p class="entry-summary">
+              Hour-long ideation meeting in the classroom. We started by listing every
+              design idea without judging anything, then filtered against time, materials,
+              and skill level. Came out with a finalized layout direction and a clear
+              next step — produce a scaled sketch with component placement and
+              measurements before our next build session.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-02-19">February 19, 2026</time>
+              <span class="entry-tag">CAD</span>
+            </div>
+            <h3>Lock-in and start CADing against real components</h3>
+            <p class="entry-summary">
+              Goal of the session was to stop changing directions and commit to a final
+              prototype concept, then start building toward it. Once aligned, we moved
+              to the makerspace and began CAD modelling. The critical detail we'd been
+              guessing at before: we measured the actual electronics with calipers so
+              the CAD geometry matches reality. Sam measured the DC motor (19.7 × 15.0 mm
+              body, 28.6 mm tall not including the 2 mm axle, 10.5 mm from the bottom
+              to the top of the red drive section); Minyoung measured the potentiometer
+              (6.7 mm top base, 5.9 mm knob, 16.6 mm bottom circle base, 10.7 mm bottom
+              height). Foundation is now accurate CAD on top of real dimensions.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-02-12">February 12, 2026</time>
+              <span class="entry-tag">Meeting</span>
+            </div>
+            <h3>Professor Keyvani approves the project</h3>
+            <p class="entry-summary">
+              Met with Professor Keyvani to walk through our solution. The project was
+              approved, and we picked up useful feedback on design and user-interface
+              considerations — especially around tailoring the experience more directly
+              to the specific needs of the MLA students. Next priority is building a
+              working box that proves the conductive material actually completes the
+              circuit, in time for Friday's presentation.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">Notes from the Keyvani meeting</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-02-11">February 11, 2026</time>
+              <span class="entry-tag">Prototype</span>
+            </div>
+            <h3>First cardboard prototype in the makerspace</h3>
+            <p class="entry-summary">
+              Two-hour build session in the Makerspace — laser cutter, hot glue, cardboard,
+              and X-Acto knives. Got the first physical prototype assembled. The big lesson
+              was tolerance: cardboard thickness threw off the inner box dimensions, which
+              pushed us toward 3D-printing the inner modules so the fits are precise and
+              adjustable. Locked in final dimensions with tolerances and shipped a working
+              first prototype before the 8 PM makerspace close.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">Cardboard prototype — first build</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-02-06">February 6, 2026</time>
+              <span class="entry-tag">Ideation</span>
+            </div>
+            <h3>Solution ideation and final KTDA decision</h3>
+            <p class="entry-summary">
+              Each team member sketched three solution concepts using the morphological
+              chart and other ideation techniques, then we ran a KTDA to score everything
+              against safety, electronics, age-appropriateness, problem-solving, fun,
+              realism to build, and ease of use. The winning concept was a circuit-puzzle
+              "power grid building" toy — students complete a circuit by snapping
+              components into a labeled board to make an LED light up. My three concepts
+              fed into this: a large breadboard with snap components and puzzle challenge
+              cards, a "guess the hidden circuit" lightbulb game, and a two-player reaction
+              time button game. The morphological chart helped us settle on the input
+              method (push buttons), feedback (LEDs), game style (matching), and difficulty
+              (randomized challenge cards).
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">KTDA chart + ideation sketches</div>
+            </div>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-02-02">February 2, 2026</time>
+              <span class="entry-tag">PM Handoff</span>
+            </div>
+            <h3>Project manager handoff and market solution research</h3>
+            <p class="entry-summary">
+              Minyoung (M1 PM) handed off logistics and notes to me as the M2 project
+              manager. The team gave PM feedback — biggest themes were staying on top of
+              schedule, being proactive in the group chat, and finding times that work
+              for everyone. We narrowed the STEM topic to electronics and each member
+              found existing market solutions to use as references. My picks were the
+              littleBits Arduino Coding Kit (Fourney &amp; Terry, 2012) for its
+              magnetic-snap modular design and the Squishy Circuits bioelectronic kit
+              (Katsoulakis et al., 2025) for its use of conductive vs. insulating dough.
+              Sam looked at aesthetic ESP32-based circuit kits, the Kids First Coding &amp;
+              Robotics set, and stretchable paper-based Chibi Chip circuits. Minyoung
+              covered Snap Circuits and littleBits in more depth. The hard part was
+              finding kits genuinely pitched at the MLA students' level.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-01-29">January 29, 2026</time>
+              <span class="entry-tag">Problem Statement</span>
+            </div>
+            <h3>Problem statement locked in</h3>
+            <p class="entry-summary">
+              Two-hour session in the library seminar room to write the formal problem
+              statement. The primary users are 5th graders at Melrose Leadership Academy
+              in Oakland; secondary stakeholders are their teachers and parents. The core
+              need is a hands-on STEM game that makes learning genuinely fun while still
+              being age-appropriate, educational, and engaging — not just gamified
+              busywork. Success looks like high student engagement, measurable improvement
+              in curiosity and understanding, and positive feedback from teachers.
+              Candidate solution levers we flagged: in-game incentives, friendly
+              competition, and very tactile / hands-on play.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-01-28">January 28, 2026</time>
+              <span class="entry-tag">Research</span>
+            </div>
+            <h3>Background research debrief</h3>
+            <p class="entry-summary">
+              30-minute round-robin where each member presented their literature findings.
+              My takeaway: well-designed STEM games consistently improve engagement,
+              motivation, and cognitive learning outcomes, and the strongest results come
+              from interactivity, real-world context, and inclusive design — especially
+              for younger learners. Sam flagged a critical gap in age-appropriate design:
+              Generation Alpha students need interactive, hands-on play that goes beyond
+              point-system gamification. Minyoung surfaced concrete game mechanics that
+              worked in arithmetic studies — scores, trophies, timers, weekly
+              leaderboards, audio feedback, and color-coded responses. The shared
+              direction: hands-on, age-appropriate, learning-goal-driven.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-01-27">January 27, 2026</time>
+              <span class="entry-tag">Research</span>
+            </div>
+            <h3>Background research — individual literature search</h3>
+            <p class="entry-summary">
+              Each member pulled at least five peer-reviewed sources on game-based STEM
+              learning for elementary students, primarily from Engineering Village and
+              Web of Science. My five focused on joyful / game-based learning outcomes,
+              social robots advising children on group tasks, AR educational experiences
+              tied to UN sustainability goals, serious games for children with motor
+              dysgraphia, and narrative video games in classrooms. Together they pointed
+              at interactivity + contextualized real-world problems + inclusive design as
+              the recurring success factors.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-01-22">January 22, 2026</time>
+              <span class="entry-tag">Decision</span>
+            </div>
+            <h3>Settled on a sci-fi STEM game direction</h3>
+            <p class="entry-summary">
+              Short follow-up meeting in the library seminar room to consolidate what we
+              heard at MLA. Three signals stood out: 5th graders love the sci-fi genre,
+              they love their English class because of how much freedom it gives them,
+              and they push back hard on a heavy courseload. From those we agreed to
+              tailor the project as a sci-fi-flavored STEM game — light enough to feel
+              like play, but with real learning goals underneath.
+            </p>
+          </li>
+
+          <li class="entry-card">
+            <div class="entry-meta">
+              <time datetime="2026-01-16">January 16, 2026</time>
+              <span class="entry-tag">Empathize</span>
+            </div>
+            <h3>User visit at Melrose Leadership Academy</h3>
+            <p class="entry-summary">
+              Two-hour site visit to MLA in Oakland. We interviewed the science and English
+              teachers about where students struggle, and talked directly with 5th graders
+              about what they actually enjoy. From those conversations we built the
+              Stakeholder Profile Canvas — wants (learn better, have fun, be engaged,
+              learn in Spanish), pains (boring teachers, losing focus, hard subjects),
+              needs (short and simple instructions, visual/interactive features), and
+              the surrounding activities and objects in a 5th-grade classroom. This is
+              the empathy anchor we'll keep coming back to.
+            </p>
+            <div class="entry-media">
+              <div class="img-placeholder">Stakeholder Profile Canvas — MLA 5th graders</div>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Edison Chen</p>
+      <p class="footer-tag">Built with HTML, CSS &amp; care.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
