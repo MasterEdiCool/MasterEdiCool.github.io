@@ -1,15 +1,34 @@
 :root {
   --bg: #ffffff;
   --bg-alt: #f7f7f5;
+  --surface: #ffffff;
   --ink: #111111;
   --ink-soft: #4a4a4a;
   --muted: #8a8a8a;
   --line: #ececec;
   --accent: #111111;
   --accent-soft: #2b2b2b;
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --btn-ink: #ffffff;
   --radius: 14px;
   --maxw: 960px;
   --transition: 200ms ease;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0e0e10;
+  --bg-alt: #161618;
+  --surface: #1a1a1d;
+  --ink: #f1f1f1;
+  --ink-soft: #c3c3c3;
+  --muted: #8a8a8a;
+  --line: #2c2c30;
+  --accent: #f1f1f1;
+  --accent-soft: #d8d8d8;
+  --nav-bg: rgba(18, 18, 20, 0.85);
+  --btn-ink: #0e0e10;
+  color-scheme: dark;
 }
 
 * {
@@ -28,6 +47,7 @@ body {
   background: var(--bg);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+  transition: background var(--transition), color var(--transition);
 }
 
 a {
@@ -48,8 +68,8 @@ a:hover {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 18px 32px;
-  background: rgba(255, 255, 255, 0.85);
+  padding: 18px 84px 18px 32px;
+  background: var(--nav-bg);
   backdrop-filter: saturate(180%) blur(12px);
   -webkit-backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid var(--line);
@@ -118,6 +138,50 @@ a:hover {
   transition: transform var(--transition);
 }
 
+/* ---------- Theme toggle ---------- */
+.theme-toggle {
+  position: fixed;
+  top: 13px;
+  right: 24px;
+  z-index: 100;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.05rem;
+  line-height: 1;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+  transition: background var(--transition), color var(--transition),
+    border-color var(--transition), transform var(--transition);
+}
+
+.theme-toggle:hover {
+  transform: translateY(-1px) scale(1.05);
+  border-color: var(--ink);
+}
+
+.theme-toggle .icon-sun {
+  display: none;
+}
+
+.theme-toggle .icon-moon {
+  display: inline;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-sun {
+  display: inline;
+}
+
+:root[data-theme="dark"] .theme-toggle .icon-moon {
+  display: none;
+}
+
 /* ---------- Hero ---------- */
 .hero {
   position: relative;
@@ -134,7 +198,7 @@ a:hover {
   background:
     radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.04), transparent 50%),
     radial-gradient(circle at 80% 30%, rgba(0, 0, 0, 0.05), transparent 55%),
-    linear-gradient(180deg, #fafafa, #ffffff 60%);
+    linear-gradient(180deg, var(--bg-alt), var(--bg) 60%);
   z-index: 0;
 }
 
@@ -216,7 +280,7 @@ a:hover {
 
 .btn-primary {
   background: var(--ink);
-  color: #fff;
+  color: var(--btn-ink);
   border-color: var(--ink);
 }
 
@@ -302,7 +366,7 @@ a:hover {
 }
 
 .card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 24px;
@@ -438,7 +502,7 @@ a:hover {
   display: flex;
   gap: 16px;
   padding: 14px 18px;
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   align-items: center;
@@ -512,7 +576,7 @@ a:hover {
 }
 
 .project-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   overflow: hidden;
@@ -653,7 +717,7 @@ a:hover {
   height: 36px;
   border-radius: 50%;
   border: 0;
-  background: rgba(255, 255, 255, 0.92);
+  background: var(--surface);
   color: var(--ink);
   font-size: 1.3rem;
   line-height: 1;
@@ -670,7 +734,7 @@ a:hover {
 
 .slide-prev:hover,
 .slide-next:hover {
-  background: #fff;
+  background: var(--bg-alt);
   transform: translateY(-50%) scale(1.05);
 }
 
@@ -854,7 +918,7 @@ a:hover {
 }
 
 .entry-card {
-  background: #fff;
+  background: var(--surface);
   border: 1px solid var(--line);
   border-radius: var(--radius);
   padding: 22px 24px;
@@ -871,7 +935,7 @@ a:hover {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background: #fff;
+  background: var(--surface);
   border: 2px solid var(--ink);
 }
 
@@ -983,7 +1047,7 @@ a:hover {
     right: 0;
     flex-direction: column;
     gap: 0;
-    background: #fff;
+    background: var(--bg);
     border-bottom: 1px solid var(--line);
     padding: 8px 0;
     transform: translateY(-8px);
@@ -1009,6 +1073,13 @@ a:hover {
 
   .topnav {
     padding: 14px 20px;
+  }
+
+  .theme-toggle {
+    top: 10px;
+    right: 64px;
+    width: 38px;
+    height: 38px;
   }
 
   .section {

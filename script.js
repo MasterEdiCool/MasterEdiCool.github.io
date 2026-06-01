@@ -1,5 +1,18 @@
 document.getElementById("year").textContent = new Date().getFullYear();
 
+// Light / dark mode toggle (initial theme is applied by an inline script in <head>)
+const themeToggle = document.querySelector(".theme-toggle");
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const root = document.documentElement;
+    const next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try {
+      localStorage.setItem("theme", next);
+    } catch (e) {}
+  });
+}
+
 const toggle = document.querySelector(".nav-toggle");
 const links = document.querySelector(".nav-links");
 
