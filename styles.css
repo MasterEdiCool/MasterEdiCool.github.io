@@ -365,14 +365,16 @@ a:hover {
 /* ---------- Bio ---------- */
 .bio-grid {
   display: grid;
-  gap: 28px;
+  grid-template-columns: 1fr;
+  gap: 24px;
   margin-top: 28px;
 }
 
-@media (min-width: 720px) {
-  .bio-grid {
-    grid-template-columns: 1fr 1fr;
-  }
+.bio-block {
+  background: var(--bg-alt);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  padding: 28px 32px;
 }
 
 .bio-block h3 {
