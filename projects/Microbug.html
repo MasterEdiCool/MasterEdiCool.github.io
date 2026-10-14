@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MicroBug — Edison Chen</title>
+  <meta name="description" content="MicroBug — a light-sensitive robot built and soldered from a Velleman analog electronics kit." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <script>
+    (function () {
+      try {
+        var t = localStorage.getItem("theme") ||
+          (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <nav class="topnav">
+    <a href="../index.html" class="brand">Edison Chen</a>
+    <ul class="nav-links">
+      <li><a href="../index.html">Welcome</a></li>
+      <li><a href="../pages/projects.html" class="active">Projects</a></li>
+      <li><a href="../pages/bio.html">Bio</a></li>
+      <li><a href="../pages/contact.html">Contact</a></li>
+      <li><a href="../pages/resume.html">Resume</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <button class="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <span class="icon-sun" aria-hidden="true">☀</span>
+      <span class="icon-moon" aria-hidden="true">☾</span>
+    </button>
+  </nav>
+
+  <main>
+    <section class="section page-section">
+      <div class="container">
+        <a href="../pages/projects.html" class="back-link">← All projects</a>
+
+        <header class="project-head">
+          <p class="eyebrow">Project</p>
+          <h1 class="section-title">MicroBug</h1>
+          <p class="lede">
+            A light-sensitive robot built and soldered to have 
+            two light-dependent resistors steer a pair of motors such that the bug scurries
+            toward or away from light.
+          </p>
+          <p class="muted">Jan 2024 - Jun 2024</p>
+        </header>
+
+        <div class="tabs" data-tabs>
+          <div class="tab-list" role="tablist">
+            <button class="tab-btn active" role="tab" data-tab="summary" aria-selected="true">Summary</button>
+            <button class="tab-btn" role="tab" data-tab="design" aria-selected="false">Design</button>
+            <button class="tab-btn" role="tab" data-tab="gallery" aria-selected="false">Gallery</button>
+          </div>
+
+          <!-- SUMMARY ============================================== -->
+          <section class="tab-panel active" data-panel="summary" role="tabpanel">
+            <h2 class="panel-title">Overview</h2>
+            <p>
+              MicroBug is a small autonomous robot assembled entirely from discrete
+              components on a single PCB. Two light-dependent resistors (LDRs) act as
+              the bug's "eyes," each feeding a transistor pair that drives one of two
+              motors. When one eye sees more light than the other, that side's motor
+              runs faster, turning the bug so it "chases" or "flees" from the brightest
+              point in the room. LEDs mounted on bent legs give it antennae that glow
+              as it moves.
+            </p>
+            <p>
+              The whole behavior emerges from analog circuitry alone: transistors used
+              as switches and amplifiers, LDRs as light sensors, and trimmer
+              potentiometers to tune each eye's sensitivity. Building it meant reading
+              a schematic, placing and orienting every component correctly, and
+              through-hole soldering the complete board by hand.
+            </p>
+
+            <h2 class="panel-title">Skills &amp; Tools</h2>
+            <div class="skill-cols">
+              <div>
+                <h4>Used</h4>
+                <ul class="tags tags-block">
+                  <li>Through-Hole Soldering</li>
+                  <li>Schematic Reading</li>
+                  <li>Transistors</li>
+                  <li>Light-Dependent Resistors</li>
+                  <li>DC Motors</li>
+                  <li>LEDs</li>
+                  <li>Trimmer Potentiometers</li>
+                  <li>Multimeter</li>
+                </ul>
+              </div>
+              <div>
+                <h4>Learned</h4>
+                <ul class="tags tags-block">
+                  <li>Analog Circuit Behavior</li>
+                  <li>Transistor Switching &amp; Amplification</li>
+                  <li>Sensor-Driven Control</li>
+                  <li>Troubleshooting &amp; Continuity Testing</li>
+                  <li>Careful Component Placement</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- DESIGN ============================================== -->
+          <section class="tab-panel" data-panel="design" role="tabpanel">
+            <h2 class="panel-title">Circuit Schematic</h2>
+            <p>
+              The circuit is mirrored for each side of the bug: an LDR and trimmer
+              potentiometer set a reference voltage, a transistor pair switches the
+              motor, and an LED indicates activity.
+            </p>
+            <img
+              class="design-image"
+              src="../images/MicroBugGallery/MicrobugSchematic.png"
+              alt="MicroBug circuit schematic showing LDRs, transistors, motors, and LEDs"
+            />
+          </section>
+
+          <!-- GALLERY ============================================== -->
+          <section class="tab-panel" data-panel="gallery" role="tabpanel">
+            <h2 class="panel-title">Gallery</h2>
+            <p>Use the arrows to step through photos of the finished build.</p>
+
+            <div class="slideshow slideshow-lg" data-slideshow>
+              <div class="slides">
+                <div class="slide active">
+                  <img src="../images/MicroBugGallery/MicrobugCompleted.png" alt="Completed MicroBug robot with motors, battery holder, LEDs, and LDRs soldered onto the PCB" style="margin:0; width:100%; height:100%; object-fit:cover; transform:scale(0.99);" />
+                </div>
+              </div>
+              <button class="slide-prev" aria-label="Previous" type="button">&#8249;</button>
+              <button class="slide-next" aria-label="Next" type="button">&#8250;</button>
+              <div class="slide-dots" aria-hidden="true">
+                <button class="dot active" type="button"></button>
+              </div>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Edison Chen</p>
+      <p class="footer-tag">Built with HTML, CSS &amp; care.</p>
+    </div>
+  </footer>
+
+  <script src="../script.js"></script>
+</body>
+</html>
